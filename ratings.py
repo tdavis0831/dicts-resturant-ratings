@@ -9,10 +9,10 @@ def rest_rating(filename):
     for line in fileopened:
         line=line.strip()
         resturant, rating=line.split(":")
-        score[resturant]=int(rating)
+        scores[resturant]=int(rating)
     
         
-        for restruant, value in sorted(scores.items()):
-            print(f"The rating of {resturant} is a {value}")
+        for restruant, rating in sorted(scores.items()):
+            print(f"The rating of {resturant} is a {rating}")
             
 
