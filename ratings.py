@@ -1,12 +1,18 @@
 """Restaurant rating lister."""
 
 
-#create diction from scores
-#open file
-#index 
 
-#for name, rating in dictname.items():
-    #sorted(dictname)
-    #print(f" {name} is rated a {rating})
-#f string to say name of place is rate a rating
+def rest_rating(filename):
+    fileopened=open(filename)
+    scores = {}
+    
+    for line in fileopened:
+        line=line.strip()
+        resturant, rating=line.split(":")
+        score[resturant]=int(rating)
+    
+        
+        for restruant, value in sorted(scores.items()):
+            print(f"The rating of {resturant} is a {value}")
+            
 
